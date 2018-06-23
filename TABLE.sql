@@ -146,7 +146,25 @@ NOCACHE;
 
 INSERT INTO PATIENT VALUES ('P'||PAT_SEQ.NEXXTVAL, 'jjh1421', 'jhjh1212', '조재형', 
     '010-2314-1121', '720114-1724266', 'jjh@mms.com', '서울시 강남구 역삼동');
-
+INSERT INTO PATIENT VALUES ('P'||PAT_SEQ.NEXTVAL, 'jh31', 'jjh1004', '정지현', 
+    '010-1425-1001', '821110-1647215', 'jh31@naver.com', '대구광역시 동구 신암동');
+INSERT INTO PATIENT VALUES ('P'||PAT_SEQ.NEXTVAL, 'yesu1234', 'yesu1', '김예수', 
+    '010-1124-5511', '910114-2014121', 'jjh@gmail.com', '서울특별시 강서구 내발산동');
+INSERT INTO PATIENT VALUES ('P'||PAT_SEQ.NEXTVAL, 'nasw', 'nsw1004', '나승원', 
+    '010-2384-2153', '730416-1724266', 'jjh@nate.com', '인천광역시 남구 숭의동');
+INSERT INTO PATIENT VALUES ('P'||PAT_SEQ.NEXTVAL, 'sekim', 'sooneeeee', '김순이', 
+    '010-9412-9381', '660812-2047413', 'soonee@gmail.com', '서울특별시 서초구 방배동');
+    
+INSERT INTO PATIENT VALUES ('P'||PAT_SEQ.NEXTVAL, 'hail', 'hihihi', '박하일', 
+    '010-2419-8341', '420803-1040743', 'hipark@gmail.com', '서울특별시 서초구 방배동');
+INSERT INTO PATIENT VALUES ('P'||PAT_SEQ.NEXTVAL, 'shkwon', 'shshsh11', '권상후', 
+    '010-2253-1921', '831117-1104825', 'shkwon@nate.com', '서울특별시 강서구 등촌동');
+INSERT INTO PATIENT VALUES ('P'||PAT_SEQ.NEXTVAL, 'yalim', 'yayaya1234', '임영애', 
+    '010-9341-0078', '570414-2510121', 'young00@nate.com', '서울특별시 양천구 목동');
+INSERT INTO PATIENT VALUES ('P'||PAT_SEQ.NEXTVAL, 'jhyeom', 'jhjh1234', '염정하', 
+    '010-4112-9304', '891124-2011034', 'jhy111@naver.com', '대전광역시 서구 복수동');
+INSERT INTO PATIENT VALUES ('P'||PAT_SEQ.NEXTVAL, 'sool5', 'sososo55', '김술오', 
+    '010-2120-9101', '680114-1011824', 'sokim@daum.net', '서울특별시 용산구 후암동');
 
 
 --------------------------------------------------------------------------------
