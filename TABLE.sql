@@ -124,7 +124,6 @@ INSERT INTO DEPARTMENT VALUES('M08','흉부외과');
 INSERT INTO DEPARTMENT VALUES('M09','이비인후과');
 INSERT INTO DEPARTMENT VALUES('M10','정신건강의학과');
 
-
 COMMIT;
 PROMPT LOADING DOCTOR ....
 --------------------------------------------------------------------------------
@@ -530,23 +529,197 @@ CREATE SEQUENCE APP_SEQ
 START WITH 10001
 NOCYCLE NOCACHE;
 
-
+--('M01','내과');
+--('M02','외과');
+--('M03','산부인과');
+--('M04','성형외과');
+--('M05','안과');
+--('M06','정형외과');
+--('M07','피부과');
+--('M08','흉부외과');
+--('M09','이비인후과');
+--('M10','정신건강의학과');
 --입력중......
+
+
+--1. 내과
 INSERT INTO APPOINTMENT (APP_NO, APP_DATE, PAT_NO, APP_FIRST, DOC_NO, DEPT_NO, APP_MEMO)
-VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('10-01-03 10:00', 'RR-MM-DD HH24:MI'),
+VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 10:00', 'RR-MM-DD HH24:MI'),
                                                                   'P001', 'Y', 'D01', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D01'), '구토');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 10:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P002', 'Y', 'D02', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D02'), '두통');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P003', 'Y', 'D03', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D03'), '복통');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 15:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P005', 'Y', 'D04', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D04'), '감기');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 11:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P004', 'Y', 'D05', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D05'), '속쓰림');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-05 12:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P006', 'Y', 'D03', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D03'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 11:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P002', 'N', 'D02', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D02'), '두통');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P007', 'Y', 'D04', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D04'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 16:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P008', 'Y', 'D01', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D01'), '두통');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 12:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P009', 'Y', 'D01', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D01'), '');
 
-INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('10-01-03 11:00', 'RR-MM-DD HH24:MI'),
-                                                                  'P002', 'Y', 'D02', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D02'), NULL);
+--2. 외과
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 11:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P010', 'Y', 'D06', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D06'), '타박상');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P011', 'Y', 'D06', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D06'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P012', 'N', 'D07', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D07'), '자상');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 11:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P013', 'Y', 'D07', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D07'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 10:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P014', 'Y', 'D07', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D07'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 11:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P015', 'Y', 'D08', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D08'), '찰과상');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P016', 'Y', 'D08', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D08'), '찰과상');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P017', 'Y', 'D09', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D09'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 11:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P018', 'Y', 'D10', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D10'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 10:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P019', 'Y', 'D06', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D06'), '타박상');
 
-INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('10-01-03 14:00', 'RR-MM-DD HH24:MI'),
-                                                                  'P003', 'Y', 'D08', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D08'), '안구건조');
+--3. 산부인과/성형외과
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 15:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P020', 'Y', 'D17', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D17'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P021', 'Y', 'D16', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D16'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P022', 'N', 'D15', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D15'), '이원');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 15:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P023', 'Y', 'D14', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D14'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 10:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P024', 'Y', 'D11', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D11'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 11:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P025', 'Y', 'D18', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D18'), '흉터제거');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P026', 'Y', 'D13', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D13'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 16:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P027', 'Y', 'D19', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D19'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 11:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P028', 'Y', 'D12', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D12'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 10:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P029', 'Y', 'D20', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D20'), '');
+                                                                  
+                                                                  
+--4. 안과
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 15:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P030', 'Y', 'D21', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D21'), '눈시림');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P031', 'Y', 'D22', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D22'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P032', 'N', 'D23', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D23'), '빛번짐');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 15:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P033', 'Y', 'D24', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D24'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 10:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P034', 'Y', 'D25', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D25'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 11:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P035', 'Y', 'D24', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D24'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P036', 'N', 'D24', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D24'), '이원');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 16:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P037', 'Y', 'D25', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D25'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 11:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P038', 'Y', 'D22', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D22'), '안구 건조');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 10:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P039', 'Y', 'D21', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D21'), '');
 
-INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('10-01-03 14:00', 'RR-MM-DD HH24:MI'),
-                                                                  'P005', 'Y', 'D06', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D06'), '요통');
 
+--5. 정형외과
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 15:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P040', 'Y', 'D26', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D21'), '물리치료');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P041', 'Y', 'D28', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D22'), '물리치료');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P042', 'N', 'D27', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D23'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 15:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P043', 'Y', 'D29', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D24'), '디스크');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 10:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P044', 'Y', 'D30', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D25'), '요통');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 11:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P045', 'Y', 'D26', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D24'), '어깨 결림');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P046', 'N', 'D26', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D24'), '이원');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 16:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P047', 'Y', 'D27', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D25'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 11:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P048', 'Y', 'D28', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D28'), '손목 통증');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 16:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P049', 'Y', 'D30', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D30'), '');
 
-
-
+--6. 피부과
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 12:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P050', 'Y', 'D31', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D31'), '가려움증');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P051', 'Y', 'D31', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D31'), '피부병');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 10:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P052', 'Y', 'D32', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D32'), '두드러기');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 15:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P053', 'Y', 'D31', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D31'), '알레르기');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 10:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P054', 'Y', 'D33', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D33'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 11:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P055', 'Y', 'D34', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D34'), '알레르기');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P056', 'N', 'D35', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D08'), '가려움증, 이원');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P057', 'Y', 'D34', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D34'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 16:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P058', 'Y', 'D34', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D34'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 10:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P059', 'Y', 'D35', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D35'), '');
+                                                                  
+--7. 흉부외과/이비인후과
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 15:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P060', 'N', 'D37', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D37'), '이원');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P061', 'Y', 'D36', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D36'), '심장질환');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P062', 'N', 'D35', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D35'), '이원');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 15:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P063', 'Y', 'D44', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D44'), '이물질');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 10:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P064', 'Y', 'D41', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D41'), '이명');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 11:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P065', 'Y', 'D38', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D38'), '결핵');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P066', 'Y', 'D43', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D43'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 16:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P067', 'Y', 'D39', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D39'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 11:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P068', 'Y', 'D42', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D42'), '비염');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 10:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P069', 'Y', 'D40', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D40'), '비염');
+                                                                  
+                                                                  
+--5. 정신의학과
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 15:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P070', 'Y', 'D46', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D21'), '우울증');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P071', 'Y', 'D48', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D22'), '심리 상담');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P072', 'N', 'D47', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D23'), '신경질환');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 15:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P073', 'Y', 'D49', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D24'), '치매');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 10:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P074', 'Y', 'D50', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D25'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 11:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P075', 'Y', 'D46', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D24'), '');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 14:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P076', 'N', 'D46', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D24'), '우울증, 이원');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 16:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P077', 'Y', 'D47', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D25'), '심리 상담');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 11:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P078', 'Y', 'D48', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D28'), '심리 상담');
+INSERT INTO APPOINTMENT VALUES ('A' || LPAD(APP_SEQ.NEXTVAL, 5, '0'), TO_DATE('18-05-02 16:00', 'RR-MM-DD HH24:MI'),
+                                                                  'P079', 'Y', 'D50', (SELECT DEPT_NO FROM DOCTOR WHERE DOC_NO = 'D30'), '무기력증');
 COMMIT;
 PROMPT Complete...
