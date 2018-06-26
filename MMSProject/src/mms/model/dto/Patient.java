@@ -11,6 +11,8 @@ public class Patient {
 	private String patEmail;
 	private String patAddress;
 	
+	private String info;
+	
 	public Patient(){}
 	
 	public Patient(String patNo, String patId, String patPw, String patName, String patPhone, String patSsn,
@@ -88,6 +90,16 @@ public class Patient {
 
 	public void setPatAddress(String patAddress) {
 		this.patAddress = patAddress;
+	}
+	
+	
+	//객체 확인용
+	public String getInfo(){
+		return info;
+	}
+	
+	public void setInfor(String info){
+		this.info = info;
 	}
 
 	@Override

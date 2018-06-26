@@ -15,6 +15,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 import mms.controller.PatientController;
+import mms.model.dto.Patient;
 
 public class LoginView extends JFrame implements ActionListener{
 	private JTextField idTF;
@@ -27,7 +28,11 @@ public class LoginView extends JFrame implements ActionListener{
 	private Image image, changeImage;
 	
 	
-	private PatientController pCon = new PatientController(); 
+	private PatientController pCon = new PatientController();
+	
+	
+	private PatientView pv = new PatientView();
+	
 	
 	
 	public LoginView() {
@@ -99,8 +104,14 @@ public class LoginView extends JFrame implements ActionListener{
 			if(pCon.loginPatient(idTF.getText(), String.valueOf(pwdTF.getPassword())) == 1){
 				if(idTF.getText().equals("mms"))
 					new DoctorView().setVisible(true); //관리자
-				else
-					new PatientView().setVisible(true); //일반회원
+				else{
+					pv.setVisible(true); //일반회원
+					
+					
+					//아이디로 객체 저장?
+					pv.setInfo(idTF.getText());
+					System.out.println("LoginView : " + pv.getInfo());
+				}
 			}
 			
 		}
@@ -291,6 +302,9 @@ public class LoginView extends JFrame implements ActionListener{
 	}
 		
 	}
+
+	
+	
 	
 	
 

@@ -12,6 +12,8 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+import mms.model.dto.Patient;
+
 public class PatientView extends JFrame implements ActionListener{
 	private JPanel panel;
 	private JLabel mainLabel, mLabel;
@@ -19,12 +21,22 @@ public class PatientView extends JFrame implements ActionListener{
 	private ImageIcon mainLogo, main_logo, mLogo, m_logo, appImageBtn, chatImageBtn, myinfoImageBtn;
 	private Image image1, image2, icon;
 	
+	private String info;
 	
+	//객체 저장용
+	public String getInfo() {
+		return info;
+	}
+	public void setInfo(String info) {
+		this.info = info;
+	}
+
 	public PatientView(){
 		this.setTitle("MMS");		
 		this.setBounds(200, 200, 400, 600);
 		this.setDefaultCloseOperation(this.EXIT_ON_CLOSE);
-
+		
+		
 		// 아이콘 설정
 		Toolkit tk = Toolkit.getDefaultToolkit();
 		icon = tk.getImage("image/mms_icon.png");
@@ -71,7 +83,6 @@ public class PatientView extends JFrame implements ActionListener{
 		
 		this.add(panel);
 		this.setResizable(false);
-		this.setVisible(true);
 	}
 
 	@Override
@@ -86,5 +97,7 @@ public class PatientView extends JFrame implements ActionListener{
 			new UpdateView().setVisible(true);
 		}
 	}
+	
+	
 
 }

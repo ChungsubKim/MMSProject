@@ -1,7 +1,5 @@
 package mms.view;
 
-
-
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
@@ -38,7 +36,7 @@ public class UpdateView extends JFrame implements ActionListener{
 		panel.setBackground(Color.WHITE);
 		panel.setLayout(null);
 		
-		originLogo = new ImageIcon("mms_logo.png");
+		originLogo = new ImageIcon("image/mms_logo.png");
 		image = originLogo.getImage(); //ImageIcon에서 image추출
 		changeImage = image.getScaledInstance(300, 100, Image.SCALE_SMOOTH); // image 크기 조절해 새로운 객체생성
 		logo = new ImageIcon(changeImage); // 다시 ImageIcon 객체 생성
@@ -129,21 +127,21 @@ public class UpdateView extends JFrame implements ActionListener{
 		panel.add(emailLabel);
 		panel.add(emailTF);
 		
-		updateImageBtn = new ImageIcon("update.png");
+		updateImageBtn = new ImageIcon("image/update.png");
 		updateBtn = new JButton(updateImageBtn);
 		updateBtn.setBackground(Color.white);
 		updateBtn.setBounds(130, 800, 100, 40);
 		panel.add(updateBtn);
 		updateBtn.addActionListener(this);
 		
-		withdrawImageBtn = new ImageIcon("withdraw.png");
+		withdrawImageBtn = new ImageIcon("image/withdraw.png");
 		withdrawBtn = new JButton(withdrawImageBtn);
 		withdrawBtn.setBackground(Color.white);
 		withdrawBtn.setBounds(350, 800, 100, 40);
 		panel.add(withdrawBtn);
 		withdrawBtn.addActionListener(this);
 		
-		backImageBtn = new ImageIcon("back.png");
+		backImageBtn = new ImageIcon("image/back.png");
 		backBtn = new JButton(backImageBtn);
 		backBtn.setBackground(Color.white);
 		backBtn.setBounds(240, 870, 100, 40);
