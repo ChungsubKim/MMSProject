@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <component id="1" language="java" name="src" project="MMSProject" file="/MMSProject/src" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="741" width="723" x="145" y="27"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </component>  
+  <package id="2" language="java" name="mms.common" project="MMSProject" file="/MMSProject/src/mms/common" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="133" width="201" x="168" y="75"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="3" language="java" name="mms.common.JDBCTemplate" project="MMSProject" 
+    file="/MMSProject/src/mms/common/JDBCTemplate.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="60" width="160" x="188" y="138"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="4" language="java" name="mms.controller" project="MMSProject" file="/MMSProject/src/mms/controller" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="191" width="202" x="167" y="230"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="5" language="java" name="mms.controller.DoctorController" project="MMSProject" 
+    file="/MMSProject/src/mms/controller/DoctorController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="60" width="144" x="196" y="289"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="mms.controller.PatientController" project="MMSProject" 
+    file="/MMSProject/src/mms/controller/PatientController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="60" width="146" x="196" y="357"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="7" language="java" name="mms.exception" project="MMSProject" file="/MMSProject/src/mms/exception" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="133" width="204" x="166" y="431"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="8" language="java" name="mms.exception.MMSException" project="MMSProject" 
+    file="/MMSProject/src/mms/exception/MMSException.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="60" width="148" x="195" y="492"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="9" language="java" name="mms.model.dao" project="MMSProject" file="/MMSProject/src/mms/model/dao" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="186" width="206" x="164" y="569"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="10" language="java" name="mms.model.dao.DoctorDao" project="MMSProject" 
+    file="/MMSProject/src/mms/model/dao/DoctorDao.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="60" width="145" x="195" y="624"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="mms.model.dao.PatientDao" project="MMSProject" 
+    file="/MMSProject/src/mms/model/dao/PatientDao.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="60" width="147" x="193" y="689"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="12" language="java" name="mms.model.dto" project="MMSProject" file="/MMSProject/src/mms/model/dto" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="254" width="216" x="384" y="78"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="13" language="java" name="mms.model.service" project="MMSProject" 
+    file="/MMSProject/src/mms/model/service" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="192" width="218" x="384" y="348"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="14" language="java" name="mms.model.service.DoctorService" project="MMSProject" 
+    file="/MMSProject/src/mms/model/service/DoctorService.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="60" width="145" x="415" y="406"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="mms.model.service.PatientService" project="MMSProject" 
+    file="/MMSProject/src/mms/model/service/PatientService.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="60" width="143" x="417" y="473"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="mms.model.dto.Appointment" project="MMSProject" 
+    file="/MMSProject/src/mms/model/dto/Appointment.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="60" width="144" x="415" y="132"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="mms.model.dto.Doctor" project="MMSProject" 
+    file="/MMSProject/src/mms/model/dto/Doctor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="60" width="145" x="415" y="200"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="mms.model.dto.Patient" project="MMSProject" 
+    file="/MMSProject/src/mms/model/dto/Patient.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="60" width="144" x="416" y="265"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="19" language="java" name="mms.run" project="MMSProject" file="/MMSProject/src/mms/run" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="125" width="216" x="385" y="561"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="20" language="java" name="mms.run.Start" project="MMSProject" file="/MMSProject/src/mms/run/Start.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="60" width="145" x="418" y="618"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="21" language="java" name="mms.view" project="MMSProject" file="/MMSProject/src/mms/view" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="673" width="223" x="614" y="80"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="22" language="java" name="mms.view.AppointmentView" project="MMSProject" 
+    file="/MMSProject/src/mms/view/AppointmentView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="60" width="146" x="648" y="140"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="mms.view.ChatView" project="MMSProject" 
+    file="/MMSProject/src/mms/view/ChatView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="60" width="147" x="647" y="209"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="mms.view.DoctorView" project="MMSProject" 
+    file="/MMSProject/src/mms/view/DoctorView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="60" width="146" x="647" y="277"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="mms.view.DSearchView" project="MMSProject" 
+    file="/MMSProject/src/mms/view/DSearchView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="60" width="147" x="646" y="345"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="mms.view.LoginView" project="MMSProject" 
+    file="/MMSProject/src/mms/view/LoginView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="60" width="148" x="645" y="413"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="mms.view.PatientView" project="MMSProject" 
+    file="/MMSProject/src/mms/view/PatientView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="60" width="146" x="646" y="481"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="mms.view.PSearchView" project="MMSProject" 
+    file="/MMSProject/src/mms/view/PSearchView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="60" width="146" x="646" y="548"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="mms.view.ScheduleView" project="MMSProject" 
+    file="/MMSProject/src/mms/view/ScheduleView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="60" width="148" x="644" y="615"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="30" language="java" name="mms.view.UpdateView" project="MMSProject" 
+    file="/MMSProject/src/mms/view/UpdateView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="60" width="148" x="644" y="681"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
